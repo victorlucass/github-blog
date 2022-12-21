@@ -1,16 +1,15 @@
-import { Outlet } from "react-router-dom";
-import { HeaderContainer } from "./styled";
+import { Outlet } from 'react-router-dom'
+import { ContentContainer, HeaderContainer } from './styled'
+import logo from '../../assets/logo.svg'
 export function DefaultLayout() {
   return (
     <main>
       <HeaderContainer>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
-          asperiores ab soluta eius voluptate cumque iure, excepturi consequatur
-          vel a quas odio magnam dicta, at ea tempora itaque dolorum obcaecati.
-        </p>
+        <img src={logo} alt="" />
       </HeaderContainer>
-      <Outlet />
+      <ContentContainer>
+        <Outlet />
+      </ContentContainer>
     </main>
-  );
+  )
 }

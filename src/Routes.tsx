@@ -1,5 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-import { DefaultLayout } from "./layout/defaultLayout";
+import { Routes, Route } from 'react-router-dom'
+import { DefaultLayout } from './layout/defaultLayout'
 
 export function RoutesApp() {
   return (
@@ -8,5 +8,5 @@ export function RoutesApp() {
         <Route path="/" element={<DefaultLayout />} />
       </Route>
     </Routes>
-  );
+  )
 }
