@@ -1,8 +1,8 @@
-import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import { RoutesApp } from "./Routes";
-import { GlobalStyles } from "./styles/global";
-import { defaultTheme } from "./styles/theme";
+import { BrowserRouter } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import { RoutesApp } from './Routes'
+import { GlobalStyles } from './styles/global'
+import { defaultTheme } from './styles/theme'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <GlobalStyles />
       </BrowserRouter>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
   }
   body {
-    background: ${(props) => props.theme.colors["base-input"]};
+    background: ${(props) => props.theme.colors['base-input']};
     -webkit-font-smoothing: antialiased;
     button {
       cursor: pointer;
@@ -25,4 +25,8 @@ export const GlobalStyles = createGlobalStyle`
       -moz-appearance: textfield;
     }
   }
-`;
+  i {
+    color: ${(props) => props.theme.colors['base-label']};
+    font-size: 1.5rem;
+  }
+`
