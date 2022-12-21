@@ -1,10 +1,16 @@
 import { CardComponent } from '../../components/card'
 import {
   InfoContainer,
+  SubTitleTextStyle,
   TextInfoStyle,
   TitleTextStyle,
 } from '../../components/stylesComponent'
-import { CardAvatar, CardComponentContent, CardInfoName } from './styled'
+import {
+  CardAvatar,
+  CardComponentContent,
+  CardInfoName,
+  LinkGitHubStyle,
+} from './styled'
 
 export function BlogPage() {
   return (
@@ -17,7 +23,10 @@ export function BlogPage() {
         <div>
           <CardInfoName>
             <TitleTextStyle>Victor Lucas</TitleTextStyle>
-            <button>github</button>
+            <LinkGitHubStyle href="#">
+              <span>github</span>
+              <i className="fa-solid fa-arrow-up-right-from-square"></i>
+            </LinkGitHubStyle>
           </CardInfoName>
           <TextInfoStyle>
             Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu
@@ -25,9 +34,18 @@ export function BlogPage() {
             volutpat pulvinar vel mass.
           </TextInfoStyle>
           <InfoContainer mt={24}>
-            <span>cameronwll</span>
-            <span>cameronwll</span>
-            <span>cameronwll</span>
+            <span>
+              <i className="fa-brands fa-github"></i>
+              <SubTitleTextStyle>cameronwll</SubTitleTextStyle>
+            </span>
+            <span>
+              <i className="fa-solid fa-building"></i>
+              <SubTitleTextStyle>Rocketseat</SubTitleTextStyle>
+            </span>
+            <span>
+              <i className="fa-solid fa-user-group"></i>
+              <SubTitleTextStyle>32 seguidores</SubTitleTextStyle>
+            </span>
           </InfoContainer>
         </div>
       </CardComponentContent>

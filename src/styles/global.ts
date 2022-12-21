@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: ${(props) => props.theme.fonts.regular};
   }
   body {
     background: ${(props) => props.theme.colors['base-input']};
@@ -26,7 +27,6 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   i {
-    color: ${(props) => props.theme.colors['base-label']};
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `

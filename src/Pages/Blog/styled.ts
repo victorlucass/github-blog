@@ -12,6 +12,21 @@ export const CardInfoName = styled.div`
   justify-content: space-between;
   margin-bottom: 8px;
 `
+export const LinkGitHubStyle = styled.a`
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  color: ${(props) => props.theme.colors.blue};
+  > span {
+    text-transform: uppercase;
+    margin-right: 5px;
+  }
+  &,
+  i {
+    font-size: ${(props) => props.theme.textSizes['textSize-12']};
+  }
+`
+
 export const CardAvatar = styled.img`
   max-height: 9.25rem;
   max-width: 9.25rem;
