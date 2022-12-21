@@ -6,12 +6,12 @@ import { defaultTheme } from "./styles/theme";
 
 function App() {
   return (
-    <BrowserRouter>
-      <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={defaultTheme}>
+      <BrowserRouter>
         <RoutesApp></RoutesApp>
-      </ThemeProvider>
-      <GlobalStyles />
-    </BrowserRouter>
+        <GlobalStyles />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
