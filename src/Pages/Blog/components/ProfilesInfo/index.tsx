@@ -23,7 +23,7 @@ const listIconLabel: InformationIconLabelType[] = [
   },
 ]
 
-export function ProfilesInfo() {
+export function ProfilesInfoBlog() {
   return (
     <section>
       <CardInfoName>

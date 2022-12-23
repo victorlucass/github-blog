@@ -14,9 +14,6 @@ export const InputSearchContent = styled.div`
     font-size: 1.125rem;
     color: ${(props) => props.theme.colors['base-subtitle']};
   }
-  > span {
-    color: ${(props) => props.theme.colors['base-span']};
-  }
 `
 export const InputSearchStyle = styled.input`
   padding: 0.75rem 1rem;

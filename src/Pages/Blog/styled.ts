@@ -12,3 +12,8 @@ export const CardAvatar = styled.img`
   max-width: 9.25rem;
   border-radius: 8px;
 `
+export const CardsInfoContainer = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+`

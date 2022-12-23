@@ -1,7 +1,8 @@
 import { CardComponent } from '../../components/card'
-import { InputSearch } from './components/InputSearch'
-import { ProfilesInfo } from './components/ProfilesInfo'
-import { CardAvatar, CardComponentContent } from './styled'
+import { InputSearchBlog } from './components/InputSearch'
+import { PostInfoBlog } from './components/PostInfo'
+import { ProfilesInfoBlog } from './components/ProfilesInfo'
+import { CardAvatar, CardComponentContent, CardsInfoContainer } from './styled'
 
 export function BlogPage() {
   return (
@@ -12,10 +13,14 @@ export function BlogPage() {
             src="https://github.com/victorlucass.png"
             alt="avatar Victor Lucas"
           />
-          <ProfilesInfo />
+          <ProfilesInfoBlog />
         </CardComponentContent>
       </CardComponent>
-      <InputSearch />
+      <InputSearchBlog />
+      <CardsInfoContainer>
+        <PostInfoBlog />
+        <PostInfoBlog />
+      </CardsInfoContainer>
     </>
   )
 }

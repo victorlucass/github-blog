@@ -4,7 +4,7 @@ import {
   InputSearchStyle,
 } from './styled'
 
-export function InputSearch() {
+export function InputSearchBlog() {
   return (
     <InputSearchContainer>
       <InputSearchContent>

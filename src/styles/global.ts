@@ -29,4 +29,26 @@ export const GlobalStyles = createGlobalStyle`
   i {
     font-size: 1rem;
   }
+  span {
+    color: ${(props) => props.theme.colors['base-span']};
+  }
+  ::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+height: 10px;
+background-color: transparent;
+}
+::-webkit-scrollbar-track-piece  {
+background-color: #eeeeee;
+-webkit-border-radius: 16px;
+}
+::-webkit-scrollbar-thumb:vertical {
+height: 10px;
+background-color: #666;
+border: 1px solid #eee;
+-webkit-border-radius: 16px;
+}
 `
