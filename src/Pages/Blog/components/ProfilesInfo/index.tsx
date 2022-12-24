@@ -6,7 +6,7 @@ import {
   TitleTextStyle,
   TextInfoStyle,
 } from '../../../../components/stylesComponent'
-import { CardInfoName, LinkGitHubStyle } from './styled'
+import { CardInfoName, LinkStyle } from './styled'
 
 const listIconLabel: InformationIconLabelType[] = [
   {
@@ -28,10 +28,10 @@ export function ProfilesInfoBlog() {
     <section>
       <CardInfoName>
         <TitleTextStyle>Victor Lucas</TitleTextStyle>
-        <LinkGitHubStyle href="#">
-          <span>github</span>
+        <LinkStyle href="#">
+          github
           <i className="fa-solid fa-arrow-up-right-from-square"></i>
-        </LinkGitHubStyle>
+        </LinkStyle>
       </CardInfoName>
       <TextInfoStyle>
         Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra

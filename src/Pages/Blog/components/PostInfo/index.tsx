@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import {
   CardInfoContainer,
   CardInfoHeader,
@@ -5,10 +6,19 @@ import {
 } from '../../../../components/stylesComponent'
 import { TextareaPostValue } from './styled'
 
+interface PostInfoProps {
+  id: number
+}
+
 export function PostInfoBlog() {
+  const navigate = useNavigate()
+  function handleClick(id: PostInfoProps) {
+    navigate(`post/${id}`)
+    console.log('cliquei')
+  }
   return (
     <>
-      <CardInfoContainer>
+      <CardInfoContainer onClick={() => handleClick(1)}>
         <CardInfoHeader>
           <TitleTextStyle fontSizeText={24}>
             JavaScript data types and data structures
